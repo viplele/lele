@@ -15,15 +15,21 @@
         .video-container {
             position: relative;
             width: 100%;
-            height: 500px;
+            height: 0; /* 高度设置为 0，以便通过 padding-bottom 设置比例 */
+            padding-bottom: 56.25%; /* 设置 16:9 的视频比例 */
             overflow: hidden;
             margin: 20px auto;
         }
 
         video {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover; /* 保证视频填充容器 */
+            /* 添加自动播放属性，并使用 playsinline 属性避免全屏播放 */
+            playsinline: true;
         }
 
         .video-controls {
@@ -120,7 +126,7 @@
     </div>
 
     <div class="video-container">
-        <video controls>
+        <video controls autoplay playsinline>
             <!-- 替换为您的实际视频源 -->
             <source src="" type="video/mp4">
             您的浏览器不支持 video 标签。
