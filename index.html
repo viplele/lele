@@ -1,180 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikTok 克隆</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background-color: #f0f2f5;
-            overflow-x: hidden; /* 隐藏水平滚动条 */
-        }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            height: 0; /* 高度设置为 0，以便通过 padding-bottom 设置比例 */
-            padding-bottom: 56.25%; /* 设置 16:9 的视频比例 */
-            overflow: hidden;
-            margin: 20px auto;
-        }
-
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* 保证视频填充容器 */
-            /* 添加自动播放属性，并使用 playsinline 属性避免全屏播放 */
-            playsinline: true;
-        }
-
-        .video-controls {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 0 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
-        }
-
-        .controls-button {
-            background: none;
-            border: none;
-            font-size: 20px;
-            color: #fff;
-            cursor: pointer;
-            padding: 10px; /* 添加按钮的内边距 */
-            border-radius: 50%; /* 将按钮设置为圆形 */
-        }
-
-        .video-title {
-            color: #fff;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        /* 顶部导航栏 */
-        .top-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #fff;
-        }
-
-        .nav-item {
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        /* 底部导航栏 */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 10px 0;
-            background-color: #fff;
-        }
-
-        .nav-icon {
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* 按钮的文字描述 */
-        .controls-button:hover::before {
-            content: attr(data-tooltip);
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .controls-button:hover::before {
-            opacity: 1;
-        }
-
-    </style>
+    <title>Parallax Scrolling Website | Codehal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- 顶部导航栏 -->
-    <div class="top-nav">
-        <div class="nav-item">推荐</div>
-        <div class="nav-item">下发视频</div>
-    </div>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-    <div class="video-container">
-        <video controls autoplay playsinline>
-            <!-- 替换为您的实际视频源 -->
-            <source src="" type="video/mp4">
-            您的浏览器不支持 video 标签。
-        </video>
-        <div class="video-controls">
-            <button class="controls-button" data-tooltip="点赞">
-                <i class="fas fa-heart"></i>
-            </button>
-            <button class="controls-button" data-tooltip="评论">
-                <i class="fas fa-comment"></i>
-            </button>
-            <button class="controls-button" data-tooltip="分享">
-                <i class="fas fa-share-alt"></i>
-            </button>
-        </div>
-    </div>
+    <section class="parallax">
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <h2 id="text">Parallax Website</h2>
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="plant">
+    </section>
 
-    <!-- 添加更多 video-container 元素来包含多个视频 -->
+    <section class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo eius beatae, rerum velit tenetur sint
+            aliquid sapiente nesciunt recusandae ipsum dolore ducimus aut ab neque minus libero soluta? Quis, asperiores
+            non a provident quasi repellat. Ab voluptatum voluptas, accusamus aliquid, provident ullam autem dolorem,
+            laudantium minima veniam veritatis nam obcaecati facilis culpa fuga suscipit eius. Libero natus excepturi
+            cum distinctio commodi deserunt minus repellat voluptas non necessitatibus provident eaque, praesentium
+            explicabo cupiditate enim mollitia quia ut. Cupiditate, ipsam ullam nemo harum nulla sequi quas nihil, amet
+            itaque, pariatur similique. Beatae facilis consectetur sapiente? Vitae iste ducimus et quae quo hic, vero
+            sequi enim a voluptatem numquam, magnam adipisci, facilis veniam tempore cupiditate! Quae dolor quia illum,
+            veritatis perspiciatis animi officia magni deleniti aliquam iste accusantium sapiente, corrupti, numquam
+            beatae!<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo eius beatae, rerum velit tenetur sint
+            aliquid sapiente nesciunt recusandae ipsum dolore ducimus aut ab neque minus libero soluta? Quis, asperiores
+            non a provident quasi repellat. Ab voluptatum voluptas, accusamus aliquid, provident ullam autem dolorem,
+            laudantium minima veniam veritatis nam obcaecati facilis culpa fuga suscipit eius. Libero natus excepturi
+            cum distinctio commodi deserunt minus repellat voluptas non necessitatibus provident eaque, praesentium
+            explicabo cupiditate enim mollitia quia ut. Cupiditate, ipsam ullam nemo harum nulla sequi quas nihil, amet
+            itaque, pariatur similique. Beatae facilis consectetur sapiente? Vitae iste ducimus et quae quo hic, vero
+            sequi enim a voluptatem numquam, magnam adipisci, facilis veniam tempore cupiditate! Quae dolor quia illum,
+            veritatis perspiciatis animi officia magni deleniti aliquam iste accusantium sapiente, corrupti, numquam
+            beatae!<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo eius beatae, rerum velit tenetur sint
+            aliquid sapiente nesciunt recusandae ipsum dolore ducimus aut ab neque minus libero soluta? Quis, asperiores
+            non a provident quasi repellat. Ab voluptatum voluptas, accusamus aliquid, provident ullam autem dolorem,
+            laudantium minima veniam veritatis nam obcaecati facilis culpa fuga suscipit eius. Libero natus excepturi
+            cum distinctio commodi deserunt minus repellat voluptas non necessitatibus provident eaque, praesentium
+            explicabo cupiditate enim mollitia quia ut. Cupiditate, ipsam ullam nemo harum nulla sequi quas nihil, amet
+            itaque, pariatur similique. Beatae facilis consectetur sapiente? Vitae iste ducimus et quae quo hic, vero
+            sequi enim a voluptatem numquam, magnam adipisci, facilis veniam tempore cupiditate! Quae dolor quia illum,
+            veritatis perspiciatis animi officia magni deleniti aliquam iste accusantium sapiente, corrupti, numquam
+            beatae!<br><br>
+        </p>
+    </section>
 
-    <!-- 底部导航栏 -->
-    <div class="bottom-nav">
-        <div class="nav-icon">
-            <i class="fas fa-home" data-tooltip="首页"></i>
-        </div>
-        <div class="nav-icon">
-            <i class="fas fa-search" data-tooltip="发现"></i>
-        </div>
-        <div class="nav-icon">
-            <i class="fas fa-user" data-tooltip="个人中心"></i>
-        </div>
-    </div>
-
-    <script>
-        // 获取所有视频容器
-        const videoContainers = document.querySelectorAll('.video-container');
-
-        // 添加事件监听器来处理视频播放
-        videoContainers.forEach(container => {
-            const video = container.querySelector('video');
-            video.addEventListener('play', () => {
-                // 暂停所有其他视频
-                videoContainers.forEach(otherContainer => {
-                    if (otherContainer !== container) {
-                        otherContainer.querySelector('video').pause();
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
