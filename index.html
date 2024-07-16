@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok 克隆</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            overflow-x: hidden; /* 隐藏水平滚动条 */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* 保证视频填充容器 */
+        }
+
+        .video-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .controls-button {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .video-title {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video controls>
+            <!-- 替换为您的实际视频源 -->
+            <source src="" type="video/mp4">
+            您的浏览器不支持 video 标签。
+        </video>
+        <div class="video-controls">
+            <button class="controls-button">
+                <i class="fas fa-heart"></i>
+            </button>
+            <button class="controls-button">
+                <i class="fas fa-comment"></i>
+            </button>
+            <button class="controls-button">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- 添加更多 video-container 元素来包含多个视频 -->
+
+    <script>
+        // 获取所有视频容器
+        const videoContainers = document.querySelectorAll('.video-container');
+
+        // 添加事件监听器来处理视频播放
+        videoContainers.forEach(container => {
+            const video = container.querySelector('video');
+            video.addEventListener('play', () => {
+                // 暂停所有其他视频
+                videoContainers.forEach(otherContainer => {
+                    if (otherContainer !== container) {
+                        otherContainer.querySelector('video').pause();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
 </html>
