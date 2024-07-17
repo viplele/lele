@@ -1,9 +1,9 @@
 # 当前版本
 
 
-| Version | Supported          |
+| Version |    Description     |
 | ------- | ------------------ |
-| v1.0.0  | 静态网页版本         |
+| v1.0.0  |    静态网页版本      |
 
 ## Reporting a Vulnerability
 
