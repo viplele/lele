@@ -1,9 +1,10 @@
 # 当前版本
 
 
-| Version |    Description     |
-| ------- | ------------------ |
-| v1.0.0  |    静态网页版本      |
+|   Version    |    Description     |
+|   -------    | ------------------ |
+| v1.0.0beta2  |    修复了部分bug     |
+| v1.0.0beta1  |    静态网页版本      |
 
 ## Reporting a Vulnerability
 
