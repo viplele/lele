@@ -8,7 +8,7 @@ header{
 /*顶部蓝色导航栏*/
 .nav{
 	height: 42px;
-	background: rgba(135,205,250,0.3);
+	background: rgba(46,77,147,0.8);
 }
 /*插入背景图片*/
 .logo-img{
@@ -72,10 +72,9 @@ header{
 /*最后一个投稿的，粉色背景*/
 .right-nav .pink{
 	width: 58px;
-	height: 60px;
-	background-color:rgba(135,205,250,1);
+	height: 48px;
+	background-color: #ee5b8c;
 	border-radius: 0 0 5px 5px;
-	text-align: center;
 }
 /*历史下面隐藏的div ,display：none*/
 .history{
@@ -239,13 +238,12 @@ article{
 .menu ul li .num{
 	height: 14px;
 	padding: 1px 3px;
-	background-color: rgba(135,205,250,1);
+	background-color: #ffafc9;
 	border-radius: 4px;
 	min-width: 18px;
 	margin-bottom: 2px;
 	color:#fff;
 	font-size: 12px;
-	text-align: center;
 
 }
 .menu ul li img{
@@ -255,26 +253,25 @@ article{
 
 /*粉红色带有轮播图下面的模块*/
 .section1{
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 /*右边的6张小图片*/
 .pics{
-	width: 600px;
-	height: 98px;
-	margin-left: 50px;
+	width: 521px;
+	margin-left: 10px;
 	position: relative;
 }
 /*每个li相对定位，左浮动*/
 .pics ul li{
 	position: relative;
-	margin-right: 25px;
+	margin-right: 20px;
 	float: left;
-	margin-bottom: 28px;
+	margin-bottom: 20px;
 }
 .pics ul li img{
-	width: 175px;
-	height: 126px;
+	width: 160px;
+	height: 98px;
 	border-radius: 5px 5px;
 }
 .pics ul li:nth-child(3){
@@ -438,9 +435,9 @@ article{
 /*八周年生日广告图*/
 .ad img{
 	width: 980px;
-	height: 150px;
+	height: 80px;
 	border-radius: 5px 5px;
-	margin-top: 0px;
+	margin-top: 50px;
 }
 /*==========正在直播模块开始=======*/
 /*正在直播整个div，宽为980*/
@@ -693,7 +690,7 @@ article{
 	width: 16px;
 	height: 16px;
 	border-radius: 5px 5px;
-	background-color: rgba(135,205,250,1);
+	background-color: #f45d8f;
 	float: left;
 	display: inline-block;
 	margin: 0 5px;
@@ -852,11 +849,11 @@ article{
 .drama-title .time-sheet{
 	width: 106px;
 	height: 36px;
-	border: 2px solid rgba(135,205,250,1);
+	border: 2px solid #f25d8e;
 	border-radius: 5px 5px;
 }
 .time-sheet p{
-	color: rgba(135,205,250,1);
+	color: #f25d8e;
 	text-align: center;
 	line-height: 36px;
 }
